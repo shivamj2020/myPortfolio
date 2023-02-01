@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="120x120" href="xyz/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="xyz/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="xyz/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="xyz/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://www.nicepng.com/png/full/111-1112693_portfolio-my-portfolio.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I am <span>shivam</span><br>Jain </h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/-MG-4782 - Copy.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        A Front-End Developer with entry-level experience specializing in web development, user
+                        interface design, HTML, and AngularS. Adept at identifying opportunities to enhance front-end
+                        design and improve the user experience
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">experiance</p>
+                        <p class="tab-links" onclick="opentab('educations')">educations</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Computer Language</span><br>Java, Html, Css, JavaScript</li>
+                            <li><span>Softwear Package</span><br>React</li>
+                            <li><span>Additional Course Taken</span><br>Data Structure</li>
+                            <li><span>Additional Course Taken</span><br>TeamWork, Time Management, Communication Skills
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li><span>08/2018-12/2018</span><br>TELEPERFORMANCE(adobe process)</li>
+                            <li><span>02/2019-11/2021</span><br>Customer Relationship Executive at BRAND_MASTERZ(Digital
+                                Marketing)</li>
+                            <li><span>04/2022 - present</span><br> Account Executive at New Fancy Traders<br></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educations">
+                        <ul>
+                            <li><span>10th(2011)</span><br>kisan shaheed smarak khalsa sen sec
+                                school,Sangaria(Rajasthan)</li>
+                            <li><span>12th(2014)</span><br>kisan shaheed smarak khalsa sen sec
+                                school,Sangaria(Rajasthan)</li>
+                            <li><span>B.tech(2019)</span><br>Arya college of Engineering and I.T, Jaipur</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- .... portfolio.... -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work10.jpg">
+                    <div class="layer">
+                        <h3>spotify music app</h3>
+                        <p>hello, This music player will have all the features found in a typical music player. You will
+                            be able to add, play, pause and seek songs that have been added. . In this project I use
+                            HTML, CSS, JavaScript. </p>
+                        <a href="https://spotifymyplaylist.netlify.app/"><i
+                                class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work20.jpg">
+                    <div class="layer">
+                        <h3>Food App</h3>
+                        <p>hello, In this project i use Html and Css. this is a food app where you can see how the food app looks </p>
+                        <a href="https://jainfoods.netlify.app/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work30.jpg">
+                    <div class="layer">
+                        <h3>Calender</h3>
+                        <p>Hello, In this project i use Html and Css. this is  a calender where you can add Events, check weather and check time also. </p>
+                        <a href="https://pocketcalender.netlify.app/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">see more</a>
+
+        </div>
+    </div>
+
+    <!------------    contect   ------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contect-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> shivam.jain702@gmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt"></i> 6375174590</p>
+                    <div class="social-icon">
+                        <a href="https://facebook.com/shivam.jain.712?mibextid=LQQJ4d"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/shivam-jain-829339108"><i
+                                class="fa-brands fa-linkedin"></i></i></a>
+                        <a href="https://github.com/shivamj2020"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contect-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>shivam Portfolio</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="sidemenu.js"></script>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
